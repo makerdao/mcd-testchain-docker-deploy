@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker-compose stop parity
+docker-compose stop parity 

@@ -1,7 +1,7 @@
 version: "3.2"
 services:
   parity:
-    image: parity/parity:stable
+    image: mcd-test
     container_name: parity
     ports:
       - "8545:8545"
@@ -11,9 +11,6 @@ services:
       - "8546"
     user: root
     working_dir: /home/parity
-    volumes:
-      - $PWD/config/parity/keys:/home/parity/.local/share/io.parity.ethereum/keys
-      - $PWD/config/parity/parity-dev-constantinopole.json:/home/parity/config/parity-dev-constantinopole.json
     command: ["--chain=/home/parity/config/parity-dev-constantinopole.json",
               "--tracing=on",
               "--pruning=archive",
@@ -34,3 +31,34 @@ services:
       - $PWD/src:/home/maker/src
     command: >
       /home/maker/deploy-mcd.sh
+
+  unit-testing-dss-deployer:
+    build:
+      context: dapphub-tools
+    image: makerdao/dapphub-tools
+    container_name: unit-testing-dss-deployer
+    privileged: true
+    working_dir: /home/maker
+    volumes:
+      - $PWD/config/parity/keys:/testchain-data/keys
+      - $PWD/bin/deploy-mcd.sh:/home/maker/deploy-mcd.sh
+      - $PWD/src:/home/maker/src
+      - $PWD/config/deploy-testchain_unit-testing.json:/home/maker/src/deployment-scripts/deploy-testchain.json
+    command: >
+      /home/maker/deploy-mcd.sh
+
+  integration-testing-dss-deployer:
+    build:
+      context: dapphub-tools
+    image: makerdao/dapphub-tools
+    container_name: integration-testing-dss-deployer
+    privileged: true
+    working_dir: /home/maker
+    volumes:
+      - $PWD/config/parity/keys:/testchain-data/keys
+      - $PWD/bin/deploy-mcd.sh:/home/maker/deploy-mcd.sh
+      - $PWD/src:/home/maker/src
+      - $PWD/config/deploy-testchain_integration-testing.json:/home/maker/src/deployment-scripts/deploy-testchain.json
+    command: >
+      /home/maker/deploy-mcd.sh
+
