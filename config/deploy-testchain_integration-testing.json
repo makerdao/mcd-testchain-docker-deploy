@@ -4,19 +4,19 @@
   "roles": ["CREATOR"],
   "omniaFromAddr": "0xdc9A20F5a46AFE0802b361076BeFC51f787B2e58",
   "pauseDelay": "0",
-  "wait": "360",
-  "bump": "10",
-  "sump": "100",
+  "wait": "140",
+  "bump": "5000",
+  "sump": "5000",
   "hump": "0",
   "line": "1500000000000",
   "base": "0",
   "dsr": "1",
-  "flap_beg": "5",
-  "flap_ttl": "60",
-  "flap_tau": "300",
-  "flop_beg": "5",
-  "flop_ttl": "60",
-  "flop_tau": "300",
+  "flap_beg": "3",
+  "flap_ttl": "30",
+  "flap_tau": "120",
+  "flop_beg": "3",
+  "flop_ttl": "30",
+  "flop_tau": "120",
   "setLinesMode": "direct",
   "tokens": {
     "ETH": {
@@ -38,30 +38,30 @@
           "line": "1000000000000",
           "duty": "2.5",
           "chop": "5",
-          "lump": "50",
-          "beg": "5",
-          "ttl": "3",
-          "tau": "10"
+          "lump": "25",
+          "beg": "3",
+          "ttl": "5",
+          "tau": "20"
         },
         "B": {
           "mat": "180",
-          "line": "100000",
+          "line": "1000000000000",
           "duty": "0.5",
           "chop": "5",
-          "lump": "50",
-          "beg": "5",
-          "ttl": "8",
-          "tau": "24"
+          "lump": "25",
+          "beg": "3",
+          "ttl": "10",
+          "tau": "40"
         },
         "C": {
           "mat": "250",
           "line": "1000000000000",
           "duty": "0.5",
           "chop": "5",
-          "lump": "50",
-          "beg": "5",
-          "ttl": "60",
-          "tau": "300"
+          "lump": "25",
+          "beg": "3",
+          "ttl": "30",
+          "tau": "120"
         }
       }
     },

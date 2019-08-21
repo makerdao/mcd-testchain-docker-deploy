@@ -34,6 +34,6 @@
 
 ## Deploy and publish testchain-pymaker
 - Edit the relevant `deploy-testchain_*.json` file to change DSS deployment parameters.
-- Depending upon which configuration you wish to deploy and publish, run `./create-testchain-pymaker.sh unit-testing` or `./publish.sh integration-testing`; the argument determines which configuration file to deploy and the tag for the image.  The deployment takes 15-20 minutes.  After this step, the image should be available in docker hub for `pymaker`-based projects to pull.
+- Depending upon which configuration you wish to deploy and publish, run `./create-testchain-pymaker.sh unit-testing` or `./create-testchain-pymaker.sh integration-testing`; the argument determines which configuration file to deploy and the tag for the image.  The deployment takes 15-20 minutes.  After this step, the image should be available in docker hub for `pymaker`-based projects to pull.
 - If updating to a new version of DSS, grab any artifacts you need from `src/deployment-scripts/out`, such as ABIs and `addresses.json`.
 
