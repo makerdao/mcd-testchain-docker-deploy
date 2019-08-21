@@ -2,6 +2,8 @@ version: "3.2"
 services:
   parity:
     image: mcd-test
+    build:
+      context: config
     container_name: parity
     ports:
       - "8545:8545"
