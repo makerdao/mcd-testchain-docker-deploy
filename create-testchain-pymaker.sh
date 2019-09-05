@@ -8,7 +8,7 @@ set -e
 if echo $ALLOWED_TAGS | grep -w $TAG > /dev/null
 then
     # Create an empty chain
-    docker rm parity
+    docker rm parity || true
     ./start-parity.sh
     sleep 3
 
