@@ -3,18 +3,22 @@
   "defaults": {},
   "roles": ["CREATOR"],
   "omniaFromAddr": "0xdc9A20F5a46AFE0802b361076BeFC51f787B2e58",
-  "pauseDelay": "0",
+  "pauseDelay": "300",
   "vat_line": "1500000000000",
-  "vow_wait": "140",
-  "vow_bump": "5000",
-  "vow_sump": "5000",
+  "vow_wait": "60",
+  "vow_bump": "10000",
+  "vow_dump": "5000",
+  "vow_sump": "10000",
   "vow_hump": "0",
   "jug_base": "0",
   "pot_dsr": "1",
+  "end_wait": "0",
+  "esm_min": "50000",
   "flap_beg": "3",
   "flap_ttl": "30",
   "flap_tau": "120",
   "flop_beg": "3",
+  "flop_pad": "50",
   "flop_ttl": "30",
   "flop_tau": "120",
   "setLinesMode": "direct",
@@ -23,22 +27,25 @@
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
-        "price": "230",
+        "price": "200",
         "signers": [
           "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "150",
           "line": "1000000000000",
+          "dust": "0",
           "duty": "5",
           "chop": "5",
-          "lump": "0.15",
+          "lump": "1.5",
           "beg": "1",
           "ttl": "5",
           "tau": "20"
@@ -46,9 +53,10 @@
         "B": {
           "mat": "200",
           "line": "1000000000000",
+          "dust": "0",
           "duty": "4",
           "chop": "5",
-          "lump": "0.15",
+          "lump": "1.5",
           "beg": "1",
           "ttl": "10",
           "tau": "40"
@@ -56,9 +64,10 @@
         "C": {
           "mat": "120",
           "line": "1000000000000",
+          "dust": "0",
           "duty": "10",
           "chop": "5",
-          "lump": "0.15",
+          "lump": "1.5",
           "beg": "1",
           "ttl": "30",
           "tau": "120"
@@ -75,16 +84,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "180",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "10",
           "chop": "8",
-          "lump": "2.75",
+          "lump": "27.5",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
@@ -101,16 +113,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "190",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "9.5",
           "chop": "8",
-          "lump": "150",
+          "lump": "1500",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
@@ -127,16 +142,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "180",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "11.5",
           "chop": "8",
-          "lump": "16.5",
+          "lump": "165",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
@@ -153,16 +171,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "200",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "10.5",
           "chop": "8",
-          "lump": "155",
+          "lump": "1550",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
@@ -179,16 +200,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "190",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "9",
           "chop": "8",
-          "lump": "1.85",
+          "lump": "18.5",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
@@ -205,16 +229,19 @@
           "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
           "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
           "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0xa072Eaf3f9EbeA5e6c3A982A37bdF275E5925bFC"
+          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
+          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
+          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
         ]
       },
       "ilks": {
         "A": {
           "mat": "180",
-          "line": "5000",
+          "line": "50000",
+          "dust": "0",
           "duty": "9",
           "chop": "5",
-          "lump": "500",
+          "lump": "5000",
           "beg": "1",
           "ttl": "3600",
           "tau": "172800"
