@@ -9,15 +9,16 @@
   "vow_bump": "10000",
   "vow_dump": "5000",
   "vow_sump": "10000",
-  "vow_hump": "0",
+  "vow_hump": "1000",
   "jug_base": "0",
-  "pot_dsr": "1",
-  "end_wait": "0",
-  "esm_min": "50000",
-  "flap_beg": "3",
+  "pot_dsr": "2",
+  "end_wait": "60",
+  "esm_pit": "0x69076e44a9c70a67d5b79d95795aba299083c275",
+  "esm_min": "1",
+  "flap_beg": "5",
   "flap_ttl": "30",
   "flap_tau": "120",
-  "flop_beg": "3",
+  "flop_beg": "5",
   "flop_pad": "50",
   "flop_ttl": "30",
   "flop_tau": "120",
@@ -42,64 +43,35 @@
         "A": {
           "mat": "150",
           "line": "1000000000000",
-          "dust": "0",
-          "duty": "5",
-          "chop": "5",
-          "lump": "1.5",
-          "beg": "1",
+          "dust": "20",
+          "duty": "4",
+          "chop": "13",
+          "lump": "50",
+          "beg": "3",
           "ttl": "5",
           "tau": "20"
         },
         "B": {
           "mat": "200",
           "line": "1000000000000",
-          "dust": "0",
-          "duty": "4",
+          "dust": "20",
+          "duty": "2",
           "chop": "5",
-          "lump": "1.5",
-          "beg": "1",
+          "lump": "50",
+          "beg": "3",
           "ttl": "10",
           "tau": "40"
         },
         "C": {
           "mat": "120",
           "line": "1000000000000",
-          "dust": "0",
+          "dust": "20",
           "duty": "10",
           "chop": "5",
-          "lump": "1.5",
-          "beg": "1",
+          "lump": "50",
+          "beg": "3",
           "ttl": "30",
           "tau": "120"
-        }
-      }
-    },
-    "REP": {
-      "pipDeploy": {
-        "osmDelay": "0",
-        "type": "value",
-        "price": "20",
-        "signers": [
-          "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
-          "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
-          "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
-          "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
-          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
-          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
-        ]
-      },
-      "ilks": {
-        "A": {
-          "mat": "180",
-          "line": "50000",
-          "dust": "0",
-          "duty": "10",
-          "chop": "8",
-          "lump": "27.5",
-          "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
         }
       }
     },
@@ -120,44 +92,15 @@
       },
       "ilks": {
         "A": {
-          "mat": "190",
+          "mat": "200",
           "line": "50000",
           "dust": "0",
-          "duty": "9.5",
-          "chop": "8",
-          "lump": "1500",
+          "duty": "10",
+          "chop": "10",
+          "lump": "5",
           "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
-        }
-      }
-    },
-    "OMG": {
-      "pipDeploy": {
-        "osmDelay": "0",
-        "type": "value",
-        "price": "30",
-        "signers": [
-          "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
-          "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
-          "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
-          "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
-          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
-          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
-        ]
-      },
-      "ilks": {
-        "A": {
-          "mat": "180",
-          "line": "50000",
-          "dust": "0",
-          "duty": "11.5",
-          "chop": "8",
-          "lump": "165",
-          "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
+          "ttl": "600",
+          "tau": "3600"
         }
       }
     },
@@ -178,73 +121,15 @@
       },
       "ilks": {
         "A": {
-          "mat": "200",
+          "mat": "150",
           "line": "50000",
-          "dust": "0",
-          "duty": "10.5",
-          "chop": "8",
-          "lump": "1550",
-          "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
-        }
-      }
-    },
-    "DGD": {
-      "pipDeploy": {
-        "osmDelay": "0",
-        "type": "value",
-        "price": "50",
-        "signers": [
-          "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
-          "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
-          "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
-          "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
-          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
-          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
-        ]
-      },
-      "ilks": {
-        "A": {
-          "mat": "190",
-          "line": "50000",
-          "dust": "0",
-          "duty": "9",
-          "chop": "8",
-          "lump": "18.5",
-          "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
-        }
-      }
-    },
-    "GNT": {
-      "pipDeploy": {
-        "osmDelay": "0",
-        "type": "value",
-        "price": "50",
-        "signers": [
-          "0x005B903dAdfD96229CBa5EB0e5Aa75C578e8F968",
-          "0x25310bC78B9347F97DC664b46E5D4602a6De5f2C",
-          "0x74B12Eeb596831796Beb1B36FC96DCCa815523B8",
-          "0xe709290634dE56a55d9826d35A9e677Fea5422EC",
-          "0x18753d13f14b80eb3d8ea96d4367957bb588d410",
-          "0x5874f6a09271cdb4e1a13ef3d402df6912863244",
-          "0x62ccadc1187593d0553398fabfa7ba41eb435ad2"
-        ]
-      },
-      "ilks": {
-        "A": {
-          "mat": "180",
-          "line": "50000",
-          "dust": "0",
-          "duty": "9",
-          "chop": "5",
-          "lump": "5000",
-          "beg": "1",
-          "ttl": "3600",
-          "tau": "172800"
+          "dust": "20",
+          "duty": "4",
+          "chop": "13",
+          "lump": "50000",
+          "beg": "3",
+          "ttl": "600",
+          "tau": "3600"
         }
       }
     }
