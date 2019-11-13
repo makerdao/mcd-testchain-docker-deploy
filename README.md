@@ -1,4 +1,5 @@
 # mcd-testchain-docker-deploy
+This project is generally used to build testchains for unit and integration testing `pymaker` API and dependent projects.  To build your own testchain for other purposes, check out (staxx)[https://github.com/makerdao/staxx].
 
 
 ## Prerequisite:
