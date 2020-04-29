@@ -45,7 +45,7 @@ services:
       - $PWD/config/parity/keys:/testchain-data/keys
       - $PWD/bin/deploy-mcd.sh:/home/maker/deploy-mcd.sh
       - $PWD/src:/home/maker/src
-      - $PWD/config/deploy-testchain_unit-testing.json:/home/maker/src/deployment-scripts/deploy-testchain.json
+      - $PWD/config/deploy-testchain_unit-testing.json:/home/maker/src/deployment-scripts/config/testchain.json
     command: >
       /home/maker/deploy-mcd.sh
 
@@ -60,7 +60,7 @@ services:
       - $PWD/config/parity/keys:/testchain-data/keys
       - $PWD/bin/deploy-mcd.sh:/home/maker/deploy-mcd.sh
       - $PWD/src:/home/maker/src
-      - $PWD/config/deploy-testchain_integration-testing.json:/home/maker/src/deployment-scripts/deploy-testchain.json
+      - $PWD/config/deploy-testchain_integration-testing.json:/home/maker/src/deployment-scripts/config/testchain.json
     command: >
       /home/maker/deploy-mcd.sh
 
