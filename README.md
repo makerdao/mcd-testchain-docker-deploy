@@ -2,13 +2,13 @@
 This project is generally used to build testchains for unit and integration testing `pymaker` API and dependent projects.  To build your own testchain for other purposes, check out (staxx)[https://github.com/makerdao/staxx].
 
 
-## Prerequisite:
+## Prerequisites
 - docker: https://docs.docker.com/install/
 - docker-compose: https://docs.docker.com/compose/install/
 - Git
 
 
-## Install:
+## Installation
 - `git clone https://github.com/grandizzy/mcd-testchain-docker-deploy.git`
 - `cd mcd-testchain-docker-deploy`
 - `./setup.sh`
@@ -37,4 +37,12 @@ This project is generally used to build testchains for unit and integration test
 - Edit the relevant `deploy-testchain_*.json` file to change DSS deployment parameters.
 - Depending upon which configuration you wish to deploy and publish, run `./create-testchain-pymaker.sh unit-testing` or `./create-testchain-pymaker.sh integration-testing`; the argument determines which configuration file to deploy and the tag for the image.  The deployment takes 15-20 minutes.  After this step, the image should be available in docker hub for `pymaker`-based projects to pull.
 - If updating to a new version of DSS, grab any artifacts you need from `src/deployment-scripts/out`, such as ABIs and `addresses.json`.
+
+
+## Maintenance
+Collateral types (`ilk`s) are provided for testing each `join` contract:
+ETH - GemJoin
+USDC - GemJoin5
+WBTC - GemJoin6
+TUSD - GemJoin7
 
