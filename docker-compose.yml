@@ -21,8 +21,6 @@ services:
               "--base-path=/home/parity/.local/share/io.parity.ethereum/"]
 
   testchain-dss-deployer:
-    build:
-      context: dapphub-tools
     image: makerdao/dapphub-tools
     container_name: testchain-dss-deployer
     privileged: true
@@ -35,8 +33,6 @@ services:
       /home/maker/deploy-mcd.sh
 
   unit-testing-dss-deployer:
-    build:
-      context: dapphub-tools
     image: makerdao/dapphub-tools
     container_name: unit-testing-dss-deployer
     privileged: true
@@ -50,8 +46,6 @@ services:
       /home/maker/deploy-mcd.sh
 
   integration-testing-dss-deployer:
-    build:
-      context: dapphub-tools
     image: makerdao/dapphub-tools
     container_name: integration-testing-dss-deployer
     privileged: true
