@@ -45,4 +45,5 @@ ETH - GemJoin
 USDC - GemJoin5
 WBTC - GemJoin6
 TUSD - GemJoin7
+GUSD - GemJoin8
 
