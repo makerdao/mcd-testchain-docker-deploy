@@ -2,7 +2,7 @@
 
 TAG=$1
 ALLOWED_TAGS="unit-testing integration-testing"
-VERSION=1.1.0
+VERSION=1.1.5
 
 set -e
 
