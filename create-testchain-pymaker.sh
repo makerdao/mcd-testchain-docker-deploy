@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TAG=$1
-ALLOWED_TAGS="unit-testing integration-testing"
+ALLOWED_TAGS="unit-testing integration-testing testchain"
 VERSION=1.2.0
 
 set -e
@@ -20,7 +20,7 @@ then
     # Create and publish the docker image
     docker login
     docker commit parity makerdao/testchain-pymaker:$TAG-$VERSION
-    docker push makerdao/testchain-pymaker
+    #docker push makerdao/testchain-pymaker
     docker kill parity
 else
     echo Tag [$TAG] not supported\; allowed tags include [$ALLOWED_TAGS]

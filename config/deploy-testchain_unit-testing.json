@@ -11,6 +11,7 @@
   "vow_sump": "0.001",
   "vow_hump": "0",
   "cat_box": "5000",
+  "dog_hole": "5000",
   "jug_base": "0",
   "pot_dsr": "1",
   "end_wait": "5",
@@ -26,6 +27,16 @@
   "setLinesMode": "direct",
   "tokens": {
     "ETH": {
+      "gemDeploy": {
+        "src": "ds-weth/WETH9_",
+        "params": [],
+        "faucetSupply": "0",
+        "faucetAmount": "0"
+      },
+      "joinDeploy": {
+        "src": "GemJoin",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -44,39 +55,70 @@
         "A": {
           "mat": "150",
           "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "0",
           "duty": "4",
-          "chop": "13",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "5",
-          "tau": "10"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "5",
+            "tau": "10"
+          }
         },
         "B": {
           "mat": "200",
           "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "0",
           "duty": "4",
-          "chop": "5",
-          "dunk": "300",
-          "beg": "1",
-          "ttl": "8",
-          "tau": "24"
+          "clipDeploy": {
+            "chop": "5",
+            "hole": "300",
+            "chip": "2",
+            "tip": "100",
+            "buf": "50",
+            "tail": "10800",
+            "cusp": "33.33",
+            "calc": {
+              "type": "LinearDecrease",
+              "tau":  "24"
+            }
+          }
         },
         "C": {
           "mat": "120",
           "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "10",
-          "chop": "5",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "5",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "30",
+            "tau": "120"
+          }
         }
       }
     },
     "BAT": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/BAT",
+        "params": ["1000000000000000000000000"],
+        "faucetSupply": "990000000000000000000000",
+        "faucetAmount": "50000000000000000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -95,17 +137,32 @@
         "A": {
           "mat": "150",
           "line": "50000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "4",
-          "chop": "13",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "30",
+            "tau": "120"
+          }
         }
       }
     },
     "USDC": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/USDC",
+        "params": ["1000000000000000000000000"],
+        "faucetSupply": "990000000000000000000000",
+        "faucetAmount": "50000000000000000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin5",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -124,28 +181,48 @@
         "A": {
           "mat": "125",
           "line": "200000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "20",
-          "chop": "13",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "30",
+            "tau": "120"
+          }
         },
         "B": {
           "mat": "120",
           "line": "200000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "50",
-          "chop": "13",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "30",
+            "tau": "120"
+          }
         }
       }
     },
     "TUSD": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/TUSD",
+        "params": ["1000000000000000000000000"],
+        "faucetSupply": "990000000000000000000000",
+        "faucetAmount": "50000000000000000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin6",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -164,17 +241,32 @@
         "A": {
           "mat": "120",
           "line": "50000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "0",
-          "chop": "13",
-          "dunk": "1000",
-          "beg": "3",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "1000",
+            "beg": "3",
+            "ttl": "30",
+            "tau": "120"
+          }
         }
       }
     },
     "WBTC": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/WBTC",
+        "params": ["100000000000000"],
+        "faucetSupply": "99000000000000",
+        "faucetAmount": "100000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin5",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -193,17 +285,32 @@
         "A": {
           "mat": "150",
           "line": "1000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "20",
           "duty": "20",
-          "chop": "8",
-          "dunk": "1000",
-          "beg": "1",
-          "ttl": "30",
-          "tau": "120"
+          "flipDeploy": {
+            "chop": "8",
+            "dunk": "1000",
+            "beg": "1",
+            "ttl": "30",
+            "tau": "120"
+          }
         }
       }
     },
     "GUSD": {
+      "gemDeploy": {
+        "src": "dss-gem-joins/GUSD",
+        "params": ["1000000000000000000000000"],
+        "faucetSupply": "990000000000000000000000",
+        "faucetAmount": "50000000000000000000"
+      },
+      "joinDeploy": {
+        "src": "GemJoin8",
+        "extraParams": []
+      },
       "pipDeploy": {
         "osmDelay": "0",
         "type": "value",
@@ -222,13 +329,18 @@
         "A": {
           "mat": "101",
           "line": "5000000",
+          "autoLine": "0",
+          "autoLineGap": "0",
+          "autoLineTtl": "0",
           "dust": "10",
           "duty": "4",
-          "chop": "13",
-          "dunk": "200",
-          "beg": "3",
-          "ttl": "5",
-          "tau": "30"
+          "flipDeploy": {
+            "chop": "13",
+            "dunk": "200",
+            "beg": "3",
+            "ttl": "5",
+            "tau": "30"
+          }
         }
       }
     }
