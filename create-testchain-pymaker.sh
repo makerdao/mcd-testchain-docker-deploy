@@ -20,7 +20,7 @@ then
     # Create and publish the docker image
     docker login
     docker commit parity makerdao/testchain-pymaker:$TAG-$VERSION
-    #docker push makerdao/testchain-pymaker
+    docker push makerdao/testchain-pymaker
     docker kill parity
 else
     echo Tag [$TAG] not supported\; allowed tags include [$ALLOWED_TAGS]
