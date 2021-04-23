@@ -53,6 +53,7 @@
       },
       "ilks": {
         "A": {
+	  "comment": "for testing flip auctions",
           "mat": "150",
           "line": "1000000",
           "autoLine": "0",
@@ -69,6 +70,7 @@
           }
         },
         "B": {
+	  "comment": "for testing clip auctions",
           "mat": "200",
           "line": "1000000",
           "autoLine": "0",
@@ -91,6 +93,7 @@
           }
         },
         "C": {
+          "comment": "for quickly accumulating fees to test surplus auctions",
           "mat": "110",
           "line": "15000000",
           "autoLine": "0",
@@ -179,6 +182,7 @@
       },
       "ilks": {
         "A": {
+          "comment": "for testing GemJoin5",
           "mat": "125",
           "line": "200000",
           "autoLine": "0",
@@ -195,6 +199,7 @@
           }
         },
         "B": {
+          "comment": "for accumulating Dai to bid on auctions without causing imbalance",
           "mat": "100",
           "line": "3000000000",
           "autoLine": "0",
