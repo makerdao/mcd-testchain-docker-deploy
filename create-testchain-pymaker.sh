@@ -1,8 +1,8 @@
 #!/bin/bash
 
 TAG=$1
-ALLOWED_TAGS="unit-testing integration-testing"
-VERSION=1.2.0
+ALLOWED_TAGS="unit-testing integration-testing testchain"
+VERSION=2.0.0
 
 set -e
 
